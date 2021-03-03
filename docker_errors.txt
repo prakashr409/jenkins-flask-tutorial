@@ -1,0 +1,14 @@
+Microsoft Windows [Version 10.0.18363.1256]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+E:\Automation_Team\Automation Tools\Docker_Testing>docker build -t demo1 .\flask_docker_demo
+Sending build context to Docker daemon  5.632kB
+Step 1/7 : FROM python:alpine3.7
+ ---> 00be2573e9f7
+Step 2/7 : COPY . /app
+failed to create rwlayer: failed to start service utility VM (createreadwrite): hcsshim::CreateComputeSystem f6a72c2bac1e3be58ef0e85667d5178e6d5048b3d7cd5634170c00ec2295fde1_svm: The virtual machine could not be started because a required feature is not installed.
+(extra info: {"SystemType":"container","Name":"f6a72c2bac1e3be58ef0e85667d5178e6d5048b3d7cd5634170c00ec2295fde1_svm","Layers":null,"HvPartition":true,"HvRuntime":{"ImagePath":"C:\\Program Files\\Linux Containers","LinuxInitrdFile":"initrd.img","LinuxKernelFile":"kernel"},"ContainerType":"linux","TerminateOnLastHandleClosed":true})
+
+E:\Automation_Team\Automation Tools\Docker_Testing>
+
+Docker container issue :: The virtual machine could not be started because a required feature is not installed
